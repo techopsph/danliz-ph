@@ -8,7 +8,7 @@ body {
     max-width: 1920px;
     height: 100vh;
     margin: 0 auto;
-    padding: 24px;
+    padding: 22px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +23,9 @@ body {
 }
 
 .column {
-    flex: 50%;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 }
 
 @media (max-width: 767px) {
@@ -59,7 +61,6 @@ p {
 }
 
 .featured-image {
-    padding: 16px;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-end;
