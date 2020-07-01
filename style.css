@@ -1,0 +1,72 @@
+body {
+    width: 100vw;
+    background-color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 22px;
+}
+
+.container {
+    margin: 0 auto;
+    height: 100vh;
+    padding: 24px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+}
+
+.column {
+    flex: 50%;
+}
+
+@media (max-width: 767px) {
+    .column {
+        flex: 100%;
+    }
+}
+
+h1 {
+    color: #000000;
+    font: Semi Bold 72px/88px Montserrat;
+    letter-spacing: 0px;
+}
+
+p {
+text-align: left;
+font: Regular 32px/38px Montserrat;
+letter-spacing: 0px;
+color: #596474;
+}
+
+.message {
+    margin: 16px;
+}
+
+.closed {
+width: 140px;
+background: #C62127 0% 0% no-repeat padding-box;
+border-radius: 8px;
+padding: 2px;
+text-align: center;
+color: #ffffff;
+}
+
+.featured-image  {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    max-width: 1025px;
+    width: 100%;
+    height: auto;
+}
