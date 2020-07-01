@@ -27,9 +27,6 @@ body {
 }
 
 @media (max-width: 767px) {
-    .header {
-        flex: 100%;
-    }
     .column {
         flex: 100%;
     }
