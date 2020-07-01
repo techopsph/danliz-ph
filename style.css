@@ -1,24 +1,25 @@
 body {
-    width: 100vw;
     background-color: #ffffff;
     font-family: 'Montserrat';
     font-size: 22px;
 }
 
 .container {
-    margin: 0 auto;
+    max-width: 1920px;
     height: 100vh;
+    margin: 0 auto;
     padding: 24px;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 .row {
     display: flex;
     flex-flow: row wrap;
-    align-self: center;
+    width: 100%;
 }
 
 .column {
@@ -26,6 +27,9 @@ body {
 }
 
 @media (max-width: 767px) {
+    .header {
+        flex: 100%;
+    }
     .column {
         flex: 100%;
     }
@@ -38,10 +42,10 @@ h1 {
 }
 
 p {
-text-align: left;
-font: Regular 32px/38px Montserrat;
-letter-spacing: 0px;
-color: #596474;
+    text-align: left;
+    font: Regular 32px/38px Montserrat;
+    letter-spacing: 0px;
+    color: #596474;
 }
 
 .message {
@@ -49,20 +53,21 @@ color: #596474;
 }
 
 .closed {
-width: 140px;
-background: #C62127 0% 0% no-repeat padding-box;
-border-radius: 8px;
-padding: 2px;
-text-align: center;
-color: #ffffff;
+    width: 140px;
+    background: #C62127 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    padding: 2px;
+    text-align: center;
+    color: #ffffff;
 }
 
-.featured-image  {
+.featured-image {
+    padding: 16px;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
 }
 
 img {
